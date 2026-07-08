@@ -1,0 +1,24 @@
+export const metadata = {
+  title: 'How I keep portfolio sites above a 95 Lighthouse score',
+}
+
+# How I keep portfolio sites above a 95 Lighthouse score
+
+The score is a result, not a goal. I optimize for a few concrete behaviors:
+
+1. Keep the default render server-side.
+2. Push interaction into isolated client components.
+3. Avoid shipping unnecessary libraries for one-off UI behavior.
+
+For this site, that means the sections stay static, the motion is mostly CSS-driven, and the interactive surfaces are limited to the theme toggle, project filtering, and the command palette.
+
+### What usually matters most
+
+- Fonts with `display: swap`.
+- Images with explicit sizing.
+- Minimal layout shifts from late-loading UI.
+- Motion that enhances scannability instead of forcing large reflows.
+
+### Why this approach scales
+
+If the portfolio grows into a larger site, the same boundary discipline still helps. Content can grow without dragging the rendering model into client-side rendering everywhere.

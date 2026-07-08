@@ -1,0 +1,23 @@
+export const metadata = {
+  title: 'Designing a command palette that stays fast and discoverable',
+}
+
+# Designing a command palette that stays fast and discoverable
+
+The best command palettes are not just shortcuts. They are a search surface, a navigation aid, and a memory aid for the whole product.
+
+I keep the interaction simple:
+
+- Open instantly with <kbd>Ctrl</kbd> or <kbd>Cmd</kbd> + <kbd>K</kbd>.
+- Keep the first result list short and deterministic.
+- Make the matching logic forgiving enough to find sections, pages, and actions.
+
+The implementation in this portfolio leans on a small client-side overlay so the rest of the site can stay server rendered. That matters for performance: the palette should feel like a feature, not a framework inside the app.
+
+### Accessibility choices
+
+Keyboard focus always lands in the search field, and escape closes the surface. The item rows are regular buttons or links, so they work with assistive technologies without extra ceremony.
+
+### Performance choices
+
+I avoid heavy animation or global state. The palette filters a tiny in-memory list, which makes the UI responsive even on weaker devices.
