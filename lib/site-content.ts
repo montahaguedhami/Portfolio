@@ -43,36 +43,6 @@ export const projects = [
     ],
   },
   {
-    title: 'E-Commerce Platform',
-    category: 'Commerce',
-    year: '2025',
-    description:
-      'A headless storefront with real-time inventory, optimized checkout flows, and operational dashboards for product and support teams.',
-    decision:
-      'I split the storefront from the commerce API so the UX could stay fast while checkout, promotions, and inventory stayed independently deployable.',
-    challenge:
-      'Complex inventory and payment flows needed to stay consistent across high-traffic launch days without slowing down the browsing experience.',
-    impact: 'Reduced checkout latency and cut order sync mismatches during peak traffic.',
-    image: '/project-1.png',
-    technologies: ['Next.js', 'TypeScript', 'PostgreSQL', 'Stripe', 'Tailwind'],
-    tags: ['All', 'Commerce', 'Platform'],
-    links: {
-      code: '#',
-      live: '#',
-      caseStudy: '/case-studies/ecommerce-platform',
-    },
-    metrics: [
-      { label: 'Checkout latency', value: '320 ms' },
-      { label: 'Conversion lift', value: '+18%' },
-      { label: 'Deploy cadence', value: 'Daily' },
-    ],
-    decisions: [
-      'Used server actions for the low-risk mutation path and cached read-only catalog data at the edge.',
-      'Modeled inventory as an append-only ledger to simplify reconciliation during partial failures.',
-      'Kept payment orchestration isolated so compliance and retry policy could evolve separately.',
-    ],
-  },
-  {
     title: 'SkillMatch — HR Activity Recommender',
     category: 'AI',
     year: '2026',
@@ -215,11 +185,6 @@ export const blogPosts = [
 ] as const
 
 export const caseStudies = [
-  {
-    slug: 'ecommerce-platform',
-    title: 'E-Commerce Platform',
-    summary: 'How I kept checkout reliable while making the storefront feel instant.',
-  },
   {
     slug: 'ai-chat',
     title: 'AI Chat Application',
