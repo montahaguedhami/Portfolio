@@ -17,13 +17,13 @@ export function Hero() {
           <div className="space-y-4">
             <h1 className="text-5xl md:text-6xl font-bold leading-tight">
               <span className="bg-gradient-to-r from-primary via-accent to-primary bg-clip-text text-transparent animate-pulse">
-                Full Stack
+                Montaha Guedhami
               </span>
               <br />
               Software Engineer
             </h1>
             <p className="text-xl text-foreground/70 leading-relaxed">
-              Crafting elegant, performant solutions that bridge the gap between design and engineering. Specializing in modern web technologies and scalable architectures.
+              Software engineering student focused on backend development, DevOps, AI, and thoughtful user experiences. I enjoy turning complex ideas into practical, reliable products.
             </p>
           </div>
 
@@ -32,7 +32,7 @@ export function Hero() {
               size="lg"
               className="bg-primary hover:bg-primary/90 text-white group"
             >
-              View My Work
+              Explore My Work
               <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button
@@ -40,7 +40,7 @@ export function Hero() {
               variant="outline"
               className="border-border hover:bg-card/50"
             >
-              Download Resume
+              Get In Touch
             </Button>
           </div>
 
@@ -49,7 +49,9 @@ export function Hero() {
             <span className="text-sm font-medium text-foreground/60">Connect with me:</span>
             <div className="flex gap-3">
               <a
-                href="#"
+                href="https://github.com/montahaguedhami"
+                target="_blank"
+                rel="noreferrer"
                 className="p-2 rounded-lg bg-card hover:bg-card/80 hover:text-primary transition-all duration-200 group"
               >
                 <Code2 className="w-5 h-5" />
@@ -76,7 +78,7 @@ export function Hero() {
           <div className="relative w-80 h-80 rounded-2xl overflow-hidden border border-border/50 shadow-2xl hover:shadow-primary/20 transition-all duration-300">
             <Image
               src="/profile.png"
-              alt="Full Stack Software Engineer"
+                alt="Montaha Guedhami"
               fill
               className="object-cover"
               priority

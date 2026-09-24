@@ -9,7 +9,7 @@ export function GitHubActivity() {
           <div>
             <h2 className="text-4xl font-bold mb-4">GitHub Activity</h2>
             <p className="text-foreground/60 max-w-2xl">
-              A snapshot of pinned repositories and the kinds of systems I spend time building.
+              A snapshot of the projects I build while studying software engineering, from AI systems to full-stack applications.
             </p>
           </div>
           <div className="grid grid-cols-3 gap-3">
@@ -27,11 +27,13 @@ export function GitHubActivity() {
             <a
               key={repo.name}
               href={repo.href}
+              target="_blank"
+              rel="noreferrer"
               className="group rounded-2xl border border-border/60 bg-card/70 p-6 transition-all duration-300 hover:-translate-y-1 hover:border-primary/50 hover:shadow-lg hover:shadow-primary/10"
             >
               <div className="flex items-start justify-between gap-4 mb-4">
                 <div>
-                  <p className="text-xs uppercase tracking-[0.22em] text-foreground/45 mb-2">Pinned repo</p>
+                  <p className="text-xs uppercase tracking-[0.22em] text-foreground/45 mb-2">Public repository</p>
                   <h3 className="text-xl font-semibold group-hover:text-primary transition-colors">{repo.name}</h3>
                 </div>
                 <ExternalLink className="h-4 w-4 text-foreground/40" />

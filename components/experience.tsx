@@ -1,53 +1,53 @@
 export function Experience() {
   const experiences = [
     {
-      role: 'Senior Full Stack Engineer',
-      company: 'Tech Innovations Co.',
-      period: '2023 - Present',
+      role: 'AI Chatbot Development Intern',
+      company: 'Concept Media',
+      period: 'July 2026 - August 2026 · Remote',
       description:
-        'Leading the development of scalable microservices architecture. Mentoring junior engineers and architecting solutions for 100k+ daily active users.',
+        "Designed and built a self-hosted RAG-based chatbot to answer client questions using the agency's own data, with zero reliance on external AI APIs for data privacy compliance.",
       achievements: [
-        'Reduced API response time by 60% through optimization',
-        'Led migration of monolith to microservices',
-        'Implemented automated testing increasing coverage to 85%',
+        'Built a data extraction pipeline for OCR, PDF/Word parsing, and vector database storage using ChromaDB.',
+        'Developed a FastAPI backend integrating a locally-hosted LLM (Qwen2.5 via Ollama).',
+        'Connected and styled a Next.js frontend to match the company brand identity.',
+        'Managed the project using Git/GitLab with feature branches and merge requests.',
       ],
     },
     {
-      role: 'Full Stack Developer',
-      company: 'Digital Solutions LLC',
-      period: '2021 - 2023',
+      role: 'Summer Internship',
+      company: 'TPR',
+      period: 'July 2025 - August 2025 · Megrine',
       description:
-        'Built and maintained full-stack web applications using modern JavaScript frameworks. Collaborated with design and product teams to deliver high-quality features.',
+        'Designed and developed a modern React-based dashboard for real-time tracking and visualization of GLPI support tickets.',
       achievements: [
-        'Developed 5+ production applications serving 50k+ users',
-        'Implemented real-time features using WebSockets',
-        'Established CI/CD pipelines reducing deployment time by 70%',
+        'Integrated the GLPI REST API to retrieve and synchronize ticket data automatically.',
+        'Built an intuitive interface displaying ticket status, priority, and history in real time.',
+        'Improved support team visibility and response tracking through centralized data visualization.',
       ],
     },
     {
-      role: 'Frontend Developer',
-      company: 'Creative Studio',
-      period: '2020 - 2021',
+      role: 'Summer Internship',
+      company: 'Arab Tunisian Bank (ATB)',
+      period: 'July 2023 · Agence Fochana',
       description:
-        'Focused on building responsive, accessible user interfaces. Worked closely with designers to transform mockups into pixel-perfect implementations.',
+        'Supported daily client-facing operations and contributed to document organization.',
       achievements: [
-        'Built component library with 50+ reusable components',
-        'Improved Lighthouse score from 65 to 95',
-        'Mentored 2 junior developers on best practices',
+        'Provided client support.',
+        'Managed document sorting and organization.',
       ],
     },
   ]
 
   const education = [
     {
-      degree: 'Bachelor of Science in Computer Science',
-      school: 'University of Technology',
-      year: '2020',
+      degree: 'Engineer in Software Engineering',
+      school: 'ESPRIT School of Engineering',
+      year: '2022 - 2027',
     },
     {
-      degree: 'Professional Certification - Full Stack Development',
-      school: 'Code Academy',
-      year: '2019',
+      degree: 'Relevant Coursework',
+      school: 'Data Structures & Algorithms, Databases, Web & Mobile Development, Artificial Intelligence, Software Engineering Methodologies',
+      year: 'Current',
     },
   ]
 
@@ -62,7 +62,7 @@ export function Experience() {
           <div className="space-y-8">
             {experiences.map((exp, index) => (
               <div
-                key={exp.role}
+                key={`${exp.company}-${exp.role}`}
                 className="relative pl-8 group"
               >
                 {/* Timeline line */}

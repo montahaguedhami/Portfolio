@@ -9,9 +9,39 @@ export const navItems = [
   { label: 'Contact', href: '#contact' },
 ] as const
 
-export const projectFilters = ['All', 'AI', 'Commerce', 'Analytics', 'Platform'] as const
+export const projectFilters = ['All', 'AI', 'Commerce', 'Analytics', 'Platform', 'UX/UI'] as const
 
 export const projects = [
+  {
+    title: "Cov'act",
+    category: 'UX/UI',
+    year: '2026',
+    description:
+      'A co-ride application designed for ESPRIT students to find, offer, and coordinate shared rides with fellow students traveling along similar routes.',
+    decision:
+      'I focused the experience around quick ride discovery, clear trip details, and simple coordination so students can make reliable arrangements with less friction.',
+    challenge:
+      'Students need to compare routes, schedules, and available seats quickly while feeling confident about who they are sharing a ride with.',
+    impact: 'A clickable Figma prototype that presents the main co-ride discovery and coordination flows.',
+    image: '/covact.png',
+    technologies: ['Figma', 'UX Research', 'User Flows', 'UI Design', 'Prototyping'],
+    tags: ['All', 'UX/UI'],
+    links: {
+      code: 'https://www.figma.com/design/X56bcTGjn2gUnA4cj2cSxn/Figma-basics?node-id=1669-162202&t=Rb2vrpM026isHg7K-1',
+      live: 'https://www.figma.com/design/X56bcTGjn2gUnA4cj2cSxn/Figma-basics?node-id=1669-162202&t=Rb2vrpM026isHg7K-1',
+      caseStudy: '#projects',
+    },
+    metrics: [
+      { label: 'Design tool', value: 'Figma' },
+      { label: 'Audience', value: 'ESPRIT students' },
+      { label: 'Core flow', value: 'Find a ride' },
+    ],
+    decisions: [
+      'Structured the main flow around searching for a ride, reviewing trip details, and contacting the driver or passengers.',
+      'Made route, time, available seats, and ride information easy to scan before a student commits to a trip.',
+      'Used reusable components and a clickable prototype to keep the interface consistent and communicate the experience clearly.',
+    ],
+  },
   {
     title: 'E-Commerce Platform',
     category: 'Commerce',
@@ -43,6 +73,36 @@ export const projects = [
     ],
   },
   {
+    title: 'SkillMatch — HR Activity Recommender',
+    category: 'AI',
+    year: '2026',
+    description:
+      'An AI-powered employee recommendation system built for Magharebia Assurance, a leading Tunisian insurance company, to help HR teams match employees with suitable job opportunities.',
+    decision:
+      'As part of TechBuilders @ ESPRIT, I worked on automating the matching process so HR teams can evaluate talent more consistently and discover relevant internal candidates faster.',
+    challenge:
+      'The HR team matched employees to jobs manually, creating a slow process with a risk of biased decisions and overlooked talent.',
+    impact: 'A web-based recommendation platform that supports faster, more structured employee-to-job matching.',
+    image: '/skillhr.png',
+    technologies: ['React', 'NestJS', 'MongoDB', 'FastAPI', 'Python', 'Random Forest'],
+    tags: ['All', 'AI', 'Platform'],
+    links: {
+      code: 'https://github.com/montahaguedhami/Esprit-PIFullstackJS-4TWIN4-2026-IntelligentEmployeeRecommendationSystem',
+      live: 'https://skillhr.netlify.app/login',
+      caseStudy: '#projects',
+    },
+    metrics: [
+      { label: 'Client', value: 'Magharebia Assurance' },
+      { label: 'Team', value: 'TechBuilders @ ESPRIT' },
+      { label: 'Core goal', value: 'Match talent to roles' },
+    ],
+    decisions: [
+      'Combined a web platform with a Python-based recommendation service to support intelligent matching workflows.',
+      'Used employee and job information to surface relevant recommendations for HR review.',
+      'Focused the experience on structured, explainable recommendations that keep HR teams involved in the decision process.',
+    ],
+  },
+  {
     title: 'AI Chat Application',
     category: 'AI',
     year: '2025',
@@ -53,7 +113,7 @@ export const projects = [
     challenge:
       'Streaming tokens, conversation history, and moderation all needed to feel instant while still being observable and debuggable.',
     impact: 'Cut average time-to-first-token and made support escalation easier through traceable conversations.',
-    image: '/project-2.png',
+    image: '/conceptmedia.png',
     technologies: ['React', 'Node.js', 'WebSockets', 'OpenAI API', 'MongoDB'],
     tags: ['All', 'AI', 'Platform'],
     links: {
@@ -73,68 +133,68 @@ export const projects = [
     ],
   },
   {
-    title: 'Analytics Dashboard',
-    category: 'Analytics',
-    year: '2024',
+    title: 'GLPI Ticket Management Dashboard',
+    category: 'Platform',
+    year: '2025',
     description:
-      'An observability-heavy dashboard with custom reporting, drill-down analysis, and shareable KPI snapshots for operations teams.',
+      'A home interface for managing GLPI support tickets through an API, built during my summer internship to centralize incident handling and improve service responsiveness.',
     decision:
-      'I pushed expensive aggregations into background jobs and served precomputed slices to keep the UI interactive under load.',
+      'I focused on creating an ergonomic, functional dashboard that gives IT teams a clearer view of ticket status and helps them respond to incidents more efficiently.',
     challenge:
-      'Users needed real-time insight without waiting on large analytical queries or overfetching from the backend.',
-    impact: 'Reached a Lighthouse score above 95 while supporting a much higher daily active user baseline.',
-    image: '/project-3.png',
-    technologies: ['React', 'D3.js', 'Python', 'PostgreSQL', 'AWS'],
-    tags: ['All', 'Analytics', 'Platform'],
+      'The IT team needed a practical way to centralize ticket management while keeping incident information easy to understand and act on.',
+    impact: 'A functional interface that improves visibility across support tickets and strengthens the service team workflow.',
+    image: '/glpi.png',
+    technologies: ['React', 'Vite', 'REST API', 'GLPI'],
+    tags: ['All', 'Platform'],
     links: {
       code: '#',
       live: '#',
-      caseStudy: '/case-studies/analytics-dashboard',
+      caseStudy: '#projects',
     },
     metrics: [
-      { label: 'Daily users', value: '10k+' },
-      { label: 'Lighthouse', value: '96' },
-      { label: 'Report load', value: '< 1 s' },
+      { label: 'Project context', value: 'Summer internship' },
+      { label: 'Core integration', value: 'GLPI API' },
+      { label: 'Focus', value: 'Incident management' },
     ],
     decisions: [
-      'Pre-aggregated the core metrics with incremental jobs instead of on-demand SQL fan-out.',
-      'Used small reusable chart primitives so the dashboard stayed extensible and easy to theme.',
-      'Separated presentation from export generation so CSV and PDF jobs could run independently.',
+      'Learned how IT management tools and REST APIs support real operational workflows.',
+      'Built the interface with React and Vite for a responsive and maintainable experience.',
+      'Collaborated with the IT team to understand user needs and translate them into practical features.',
     ],
   },
 ] as const
 
 export const githubRepos = [
   {
-    name: 'design-system',
-    description: 'Reusable component system with tokens, accessibility contracts, and visual regression coverage.',
-    language: 'TypeScript',
-    stars: '412',
-    forks: '58',
-    href: '#',
-  },
-  {
-    name: 'commerce-core',
-    description: 'Commerce orchestration services for checkout, promotions, and inventory synchronization.',
-    language: 'Go',
-    stars: '278',
-    forks: '31',
-    href: '#',
-  },
-  {
-    name: 'observability-hub',
-    description: 'Internal analytics pipelines and dashboards for product telemetry and release health.',
+    name: 'CHATBOT-Internship',
+    description: 'Internship project exploring a self-hosted RAG chatbot with Python and local AI tooling.',
     language: 'Python',
-    stars: '186',
-    forks: '22',
-    href: '#',
+    stars: '0',
+    forks: '0',
+    href: 'https://github.com/montahaguedhami/CHATBOT-Internship',
+  },
+  {
+    name: 'Portfolio',
+    description: 'This portfolio, built to bring together software engineering work, experience, and interests.',
+    language: 'TypeScript',
+    stars: '0',
+    forks: '0',
+    href: 'https://github.com/montahaguedhami/Portfolio',
+  },
+  {
+    name: 'Employee Recommendation System',
+    description: 'An AI-powered HR platform built with NestJS, React, MongoDB, FastAPI, and Random Forest.',
+    language: 'JavaScript',
+    stars: '0',
+    forks: '0',
+    href: 'https://github.com/montahaguedhami/Esprit-PIFullstackJS-4TWIN4-2026-IntelligentEmployeeRecommendationSystem',
   },
 ] as const
 
 export const githubStats = [
-  { label: 'Contributions', value: '1.2k+' },
-  { label: 'Pinned repos', value: '6' },
-  { label: 'Open source', value: '14' },
+  { label: 'Public repos', value: '17' },
+  { label: 'Followers', value: '0' },
+  { label: 'Profile', value: 'Open' },
 ] as const
 
 export const blogPosts = [
@@ -164,10 +224,5 @@ export const caseStudies = [
     slug: 'ai-chat',
     title: 'AI Chat Application',
     summary: 'How I balanced low-latency streaming with moderation, memory, and prompt versioning.',
-  },
-  {
-    slug: 'analytics-dashboard',
-    title: 'Analytics Dashboard',
-    summary: 'How I served complex analytics without turning the UI into a bottleneck.',
   },
 ] as const

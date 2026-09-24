@@ -33,7 +33,7 @@ export function Navbar() {
           href="#home"
           className="text-xl font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent"
         >
-          Portfolio
+          Montaha Guedhami
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

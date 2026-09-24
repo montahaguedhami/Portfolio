@@ -1,13 +1,9 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Geist_Mono } from 'next/font/google'
 import { CommandPalette } from '@/components/command-palette'
 import { ScrollProgress } from '@/components/scroll-progress'
 import { SiteProvider } from '@/components/site-provider'
 import './globals.css'
-
-const _geistSans = Geist({ subsets: ['latin'], display: 'swap' })
-const _geistMono = Geist_Mono({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
   title: 'Full Stack Software Engineer | Portfolio',
@@ -47,7 +43,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" className="bg-background" suppressHydrationWarning>
-      <body className="antialiased bg-background text-foreground font-sans">
+      <body className="antialiased bg-background text-foreground">
         <script
           dangerouslySetInnerHTML={{
             __html: `(() => {

@@ -1,8 +1,8 @@
 export function About() {
   const stats = [
-    { label: 'Years of Experience', value: '5+' },
-    { label: 'Projects Completed', value: '40+' },
-    { label: 'Technologies', value: '20+' },
+    { label: 'Primary focus', value: 'Backend' },
+    { label: 'Infrastructure', value: 'DevOps' },
+    { label: 'Product mindset', value: 'UX/UI' },
   ]
 
   return (
@@ -33,19 +33,18 @@ export function About() {
           <h2 className="text-3xl font-bold mb-6">About Me</h2>
           <div className="space-y-4 text-foreground/80 leading-relaxed">
             <p>
-              I&apos;m a passionate full stack engineer dedicated to building elegant, performant solutions
-              that solve real problems. With expertise spanning frontend, backend, and infrastructure,
-              I approach every project with a focus on clean code, scalability, and user experience.
+              I&apos;m Montaha Guedhami, a final-year software engineering student with a strong interest
+              in software development, DevOps, and emerging technologies. I approach technical problems
+              with curiosity, adaptability, and a practical mindset.
             </p>
             <p>
-              Throughout my career, I&apos;ve had the privilege of working with startups and established
-              tech companies, delivering impactful products that have helped thousands of users. I&apos;m
-              particularly drawn to challenges that require thoughtful architectural decisions and
-              collaborative problem-solving.
+              My experience includes building RAG-based chatbots, real-time dashboards, REST APIs, and
+              full-stack applications. I&apos;m seeking opportunities to apply my knowledge, gain professional
+              experience, and grow as a versatile software engineer.
             </p>
             <p>
-              When I&apos;m not coding, you&apos;ll find me exploring new technologies, contributing to
-              open source projects, or sharing knowledge with the developer community.
+              I enjoy learning new technologies, solving real-world problems, and collaborating on products
+              that are useful, maintainable, and easy to understand.
             </p>
           </div>
         </div>

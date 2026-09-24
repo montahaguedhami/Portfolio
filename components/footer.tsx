@@ -11,10 +11,10 @@ export function Footer() {
           {/* Brand */}
           <div>
             <h3 className="text-lg font-bold bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent mb-2">
-              Portfolio
+              Montaha Guedhami
             </h3>
             <p className="text-sm text-foreground/60">
-              Full Stack Software Engineer crafting elegant digital experiences
+              Software engineering student exploring backend, DevOps, and UX/UI.
             </p>
           </div>
 
@@ -40,7 +40,9 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Connect</h4>
             <div className="flex gap-4">
               <a
-                href="#"
+                href="https://github.com/montahaguedhami"
+                target="_blank"
+                rel="noreferrer"
                 className="p-2 rounded-lg bg-card border border-border hover:border-primary hover:text-primary transition-all duration-200"
               >
                 <Code2 className="w-5 h-5" />
@@ -58,7 +60,7 @@ export function Footer() {
                 <Share className="w-5 h-5" />
               </a>
               <a
-                href="mailto:hello@example.com"
+                href="mailto:montaha.guedhami@esprit.tn"
                 className="p-2 rounded-lg bg-card border border-border hover:border-primary hover:text-primary transition-all duration-200"
               >
                 <Mail className="w-5 h-5" />
@@ -70,7 +72,7 @@ export function Footer() {
         {/* Divider */}
         <div className="border-t border-border/50 pt-8">
           <p className="text-center text-sm text-foreground/50">
-            © {currentYear} Full Stack Engineer. All rights reserved.
+            © {currentYear} Montaha Guedhami. All rights reserved.
           </p>
         </div>
       </div>

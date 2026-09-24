@@ -23,7 +23,7 @@ export function Contact() {
       <div className="max-w-2xl mx-auto">
         <h2 className="text-4xl font-bold mb-4 text-center">Get In Touch</h2>
         <p className="text-center text-foreground/60 mb-12">
-          Have a project in mind or just want to chat? Feel free to reach out!
+          Have a project idea, a collaboration in mind, or a question about my work? I&apos;d love to hear from you.
         </p>
 
         <form
@@ -99,8 +99,8 @@ export function Contact() {
         <div className="grid md:grid-cols-3 gap-6 mt-16">
           <div className="text-center p-6 rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 group">
             <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">Email</h3>
-            <a href="mailto:hello@example.com" className="text-foreground/70 hover:text-primary transition-colors">
-              hello@example.com
+            <a href="mailto:montaha.guedhami@esprit.tn" className="text-foreground/70 hover:text-primary transition-colors">
+              montaha.guedhami@esprit.tn
             </a>
           </div>
           <div className="text-center p-6 rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 group">
@@ -111,8 +111,8 @@ export function Contact() {
           </div>
           <div className="text-center p-6 rounded-lg bg-card border border-border/50 hover:border-primary/50 transition-all duration-300 group">
             <h3 className="font-semibold mb-2 group-hover:text-primary transition-colors">GitHub</h3>
-            <a href="#" className="text-foreground/70 hover:text-primary transition-colors">
-              github.com/yourprofile
+            <a href="https://github.com/montahaguedhami" target="_blank" rel="noreferrer" className="text-foreground/70 hover:text-primary transition-colors">
+              github.com/montahaguedhami
             </a>
           </div>
         </div>

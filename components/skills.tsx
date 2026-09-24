@@ -1,28 +1,28 @@
 export function Skills() {
   const skillCategories = [
     {
-      category: 'Frontend',
-      skills: ['React', 'Next.js', 'TypeScript', 'Tailwind CSS', 'Framer Motion'],
+      category: 'Programming Languages',
+      skills: ['Python', 'JavaScript', 'TypeScript', 'SQL'],
     },
     {
-      category: 'Backend',
-      skills: ['Node.js', 'Python', 'PostgreSQL', 'MongoDB', 'REST APIs'],
-    },
-    {
-      category: 'Databases',
-      skills: ['PostgreSQL', 'MongoDB', 'Redis', 'Prisma', 'Firebase'],
-    },
-    {
-      category: 'DevOps',
-      skills: ['Docker', 'GitHub Actions', 'Vercel', 'AWS', 'CI/CD'],
-    },
-    {
-      category: 'Tools & Platforms',
-      skills: ['Git', 'GraphQL', 'Webpack', 'Jest', 'Storybook'],
+      category: 'Web Development',
+      skills: ['React', 'Next.js', 'FastAPI', 'REST APIs', 'HTML/CSS'],
     },
     {
       category: 'AI & Machine Learning',
-      skills: ['LLMs', 'Embeddings', 'Vector DBs', 'Prompt Engineering', 'Fine-tuning'],
+      skills: ['RAG', 'LLM Integration', 'Prompt Engineering', 'Vector Databases', 'NLP'],
+    },
+    {
+      category: 'Databases',
+      skills: ['ChromaDB', 'MongoDB', 'SQL'],
+    },
+    {
+      category: 'Tools & DevOps',
+      skills: ['Git', 'GitLab', 'Docker'],
+    },
+    {
+      category: 'Languages',
+      skills: ['English (Advanced)', 'French (B2)', 'Arabic (Native)'],
     },
   ]
 
